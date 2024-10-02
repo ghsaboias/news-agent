@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Aggregator</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>News Aggregator</h1>
+        
+        <div class="toggle-container">
+            <button id="toggle-top-headlines" class="toggle-button active">Top Headlines</button>
+            <button id="toggle-everything" class="toggle-button">Everything</button>
+        </div>
+
+        <div id="top-headlines-section" class="news-section">
+            <h2>Top Headlines</h2>
+            <div id="top-headlines-loading" class="loading">Loading top headlines...</div>
+            <div id="top-headlines-error" class="error"></div>
+            <div id="top-headlines"></div>
+            <div class="pagination">
+                <button id="top-headlines-prev" disabled>Previous</button>
+                <span id="top-headlines-page">Page 1</span>
+                <button id="top-headlines-next">Next</button>
+            </div>
+        </div>
+
+        <div id="everything-section" class="news-section" style="display: none;">
+            <h2>Everything</h2>
+            <div id="everything-loading" class="loading">Loading everything...</div>
+            <div id="everything-error" class="error"></div>
+            <div id="everything"></div>
+            <div class="pagination">
+                <button id="everything-prev" disabled>Previous</button>
+                <span id="everything-page">Page 1</span>
+                <button id="everything-next">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
